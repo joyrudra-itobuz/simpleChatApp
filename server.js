@@ -2,10 +2,13 @@ import express from "express";
 import cors from "cors";
 import env from "dotenv";
 import db from "./connection/dbConnection.js";
+import * as Router from "./database/routes/routes.js";
 
 const app = new express();
 
 app.use(express.json());
+
+// app.use("/api", Router.app);
 
 env.config();
 

@@ -22,3 +22,5 @@ const schema = new mongoose.Schema({
     required: true,
   },
 });
+
+export const Message = mongoose.model("Message", schema);
